@@ -97,7 +97,7 @@ DROP TABLE IF EXISTS `dbo.Full_Contract`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `dbo.Full_Contract` (
-  `ID` tinyint(4) DEFAULT NULL,
+  `ID` INT AUTO_INCREMENT PRIMARY KEY,
   `Full_Contract_Code` varchar(11) DEFAULT NULL,
   `Customer_Name` varchar(23) DEFAULT NULL,
   `Year_Of_Birth` smallint(6) DEFAULT NULL,
@@ -169,8 +169,8 @@ DROP TABLE IF EXISTS `dbo.Property`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `dbo.Property` (
-  `ID` tinyint(4) DEFAULT NULL,
-  `Property_Code` varchar(7) DEFAULT NULL,
+  `ID` INT AUTO_INCREMENT PRIMARY KEY,
+  `Property_Code` varchar(11) DEFAULT NULL,
   `Property_Name` varchar(31) DEFAULT NULL,
   `Property_Type_ID` tinyint(4) DEFAULT NULL,
   `Description` text,

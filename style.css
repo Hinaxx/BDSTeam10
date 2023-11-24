@@ -145,8 +145,11 @@ p {
 .__form-group label {
   font-size: 16px;
   font-weight: 700;
-  min-width: 200px;
-  text-align: center;
+  min-width: 150px;
+  text-align: left;
+}
+.d-flex{
+  justify-content: center;
 }
 
 .__new-hd {
@@ -245,4 +248,3 @@ p {
   margin: 0 4px;
   color: #555;
 }
-

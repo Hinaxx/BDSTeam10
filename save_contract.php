@@ -14,20 +14,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $remain = isset($_POST['remain']) ? $_POST['remain'] : '';
     $status = isset($_POST['status']) ? $_POST['status'] : '';
 
- 
     // Use prepared statement to prevent SQL injection
     $sql = "INSERT INTO `dbo.full_contract` (Full_Contract_Code, Customer_Name, Year_Of_Birth, SSN, Customer_Address, Mobile, Property_ID, Date_Of_Contract, Price, Deposit, Remain, Status) VALUES (?, ?, ?, ?, ?, ?, ?, CURRENT_DATE, ?, ?, ?, ?)";
 
     // Use prepared statement to prevent SQL injection
     $stmt = $conn->prepare($sql);
     // Bind parameters with appropriate types
-    $stmt->bind_param("ssisssisdii",$ID, $user, $custom_bth, $ssn, $address, $phone, $property_id, $price, $deposit, $remain, $status);
+    $stmt->bind_param("ssisssisdii", $ID, $user, $custom_bth, $ssn, $address, $phone, $property_id, $price, $deposit, $remain, $status);
 
     if ($stmt->execute()) {
-        echo "Data has been successfully saved.";
+?>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <!-- Include necessary meta tags, stylesheets, and title -->
+            <title>Bạn Đã Thêm Dữ Liệu Thành Công!</title>
+        </head>
+
+        <body>
+            <!-- Display property details here -->
+            <h2>Bạn Đã Thêm Dữ Liệu Thành Công!</h2>
+            <a href="index.php">Quay  lại</a>
+        </body>
+        </html>
+<?php
     } else {
         echo "Error: " . $stmt->error;
-    }    
+    }
 
     // Close the prepared statement and database connection
     $stmt->close();

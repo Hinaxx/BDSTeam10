@@ -53,13 +53,13 @@ $result = $conn->query($sql);
         <div class="col-12 d-flex">
           <div class="col-3 bar-left">
             <ul class="list-tab">
-              <li class="tab_bds">Quản Lý Bất Động Sản</li>
-              <li class="tab_hd">Quản Lý Hợp Đồng</li>
+              <li class="tab_bds"> <a href="quanlybatdongsan/index.php">Quản lý Bất Động Sản</a></li>
+              <li class="tab_hd"> <a href="index.php">Quản Lý Hợp Đồng</a></li>
             </ul>
           </div>
           <div class="col-9 __bar-right">
             <div class="col-12 my-5">
-              <p class="title_hd">Danh sách hợp đồng</p>
+              <p class="title_hd">Danh Sách Hợp Đồng</p>
             </div>
             <div class="col-12 d-flex align-items-center">
               <p class="__label">Tìm kiếm </p>
@@ -115,7 +115,6 @@ $result = $conn->query($sql);
     <!-- Hiển thị nút Previous và Next -->
     <div class='pagination'>
         <?php
-        // Hiển thị nút Previous và Next
         
         // Hiển thị nút Previous
         if ($page > 1) {
@@ -146,8 +145,8 @@ $result = $conn->query($sql);
     <div class="col-10 __inner-add position-relative ">
       <p class=" close">x</p>
 
-      <div class="col-12 mb-5">
-        <p class="title_hd title_add pt-4 ">Thêm hợp đồng</p>
+      <div class="col-12 mb-3">
+        <p class="title_hd title_add pt-4 ">Thêm Hợp Đồng </p>
       </div>
 
       <form action="save_contract.php" method="post">
@@ -172,15 +171,15 @@ $result = $conn->query($sql);
         <input type="text" id="phone" name="phone" class="__input">
     </div>
     <div class="d-flex __form-group">
-      <label for="price">Price</label>
+      <label for="price">Giá</label>
       <input type="text" id="price" name="price" class="__input">
     </div>
     <div class="d-flex __form-group">
-        <label for="remain">Deposit</label>
+        <label for="remain">Tiền gửi</label>
         <input type="text" id="deposit" name="deposit" class="__input">
     </div>
     <div class="d-flex __form-group">
-        <label for="remain">Remain</label>
+        <label for="remain">Chi phí còn lại</label>
         <input type="text" id="remain" name="remain" class="__input">
     </div>
     <div class="d-flex __form-group">

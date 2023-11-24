@@ -1,0 +1,253 @@
+.logo {
+    width: 200px;
+    object-fit: contain;
+  }
+  
+  .header {
+    padding: 5px 0;
+    border-bottom: 1.5px solid #625a5a;
+  }
+  
+  .bar-left {
+    border-right: 1.5px solid #625a5a;
+    padding-top: 10%;
+    height: calc(100vh - 100px);
+  }
+  
+  .list-tab {
+    list-style: none;
+    border: 1px solid #625a5a;
+    width: max-content;
+    padding-left: 0 !important;
+  }
+  
+  .list-tab li {
+  
+    padding: 10px 20px !important;
+  }
+  
+  .list-tab li:hover {
+    background-color: rgb(49, 29, 175);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .tab_bds {
+    border-bottom: 1.5px solid #625a5a;
+  
+  }
+  
+  p {
+    margin-bottom: 0 !important;
+  }
+  
+  .title_hd {
+    color: blue;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .__label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .__input {
+    position:relative;
+    top:0px;
+    width: 60%;
+    margin-right: 10px;
+    padding: 4px 10px;
+  
+  }
+  .__input2 {
+    position:relative;
+    top:50px;
+    width: 60%;
+    margin-right: 10px;
+    padding: 4px 10px;
+  
+  }
+  
+  .__input-search {
+    background-color: rgb(146, 90, 202);
+    border: none !important;
+    color: rgb(210, 210, 75);
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .description{
+    height: 20vh;
+    background-color: #b6b6ff;
+    border: 0px;
+  }
+
+  .add_hd {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgb(158, 158, 37);
+    font-size: 18px;
+    font-weight: 700;
+    color: blue;
+    margin-right: 20px;
+    box-shadow: 2px 3px 8px #9e9999;
+  
+  }
+  .addhd{
+    display: flex;
+    justify-content: left;
+  }
+  
+  .__bar-right {
+    padding-left: 10%;
+  }
+  
+  .__table-all {
+    width: 100%;
+  
+  }
+  
+  .__table-all thead {
+    background-color: rgb(51, 0, 255);
+  }
+  
+  .__table-all thead th {
+    width: 25% !important;
+    text-align: center;
+    color: yellow;
+    padding: 5px 0 !important;
+  }
+  
+  .__table-all tbody tr td {
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+  .__table-all tr,
+  .__table-all td,
+  .__table-all th {
+    border: 2px solid #000;
+  }
+  
+  .__form-group label {
+    position: relative;
+    top:50px;
+    font-size: 16px;
+    font-weight: 700;
+    min-width: 150px;
+    text-align: left;
+  }
+  .d-flex{
+    justify-content: center;
+  }
+  
+  .__new-hd {
+    background-color: #0c0c7e;
+    min-height: 90vh;
+    width: 60%;
+    top: 5vh;
+    left: 20%;
+    position: fixed;
+    z-index: 100;
+    display: none;
+    border-radius: 10px;
+  }
+  
+  
+  
+  .__inner-add {
+    background-color: white;
+    margin: auto;
+    height: 60vh;
+  }
+
+  .rightform{
+    height: 60vh;
+    margin-top: 5vh;
+  }
+
+  .leftform{
+    height: 80vh;
+  }
+  
+  .close {
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: -70px;
+    width: 40px;
+    height: 40px;
+    top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .save {
+    position: relative;
+    top: 50px;
+    padding: 10px 20px;
+    border: 0;
+    background-color: aqua;
+    color: #0c0c7e;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+  
+  .__box-save {
+    padding-right: 12%;
+    margin-top: 40px;
+  }
+  
+  
+  .print {
+    width: 40px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .update {
+    width: 70px;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 4px;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    color: #007bff;
+  }
+  
+  .pagination a.active, .pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .pagination a.disabled {
+    color: #ccc;
+    pointer-events: none;
+  }
+  
+  .pagination span {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 4px;
+    color: #555;
+  }
